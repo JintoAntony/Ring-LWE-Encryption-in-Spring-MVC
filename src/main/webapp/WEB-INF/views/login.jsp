@@ -12,23 +12,19 @@
         <div class="wrapper">
             <div class="container">
 
-                <c:if test="${not empty error}">
-                    <div class="error">${error}</div>
-                </c:if>
-                <c:if test="${not empty msg}">
-                    <div class="msg">${msg}</div>
-                </c:if>
+                <h3>Login with Username and Password</h3>
 
-                <h1>Welcome to AEP </h1>
-                <p><font color="red">${errorMessage}</font></p>
-                <form name='loginForm' action="<c:url value='/login' />" method="GET">
-                    <input name="username" type="text" placeholder="Username" />
-                    <input name="password" type="password" placeholder="Password" /> 
+                <c:if test="${not empty error}">  <div style="color:red" >${error}</div>   </c:if>
+                <c:if test="${not empty msg}">   <div style="color:greenyellow">${msg}</div>     </c:if>
+
+                <form name='loginForm' action="<c:url value='/j_spring_security_check' />" method='POST'>                    
+                    <input type='text' name='username' placeholder="Username" />
+                    <input type='password' name='password' placeholder="Password" />
+                    <input name="submit" type="submit"   value="submit"  />
                     <input type="hidden" name="${_csrf.parameterName}"  value="${_csrf.token}" />
-                    <input type="submit" value="Login" />
                 </form>
+                <a href="/welcome">Welcome Page</a>
             </div>
-
 
             <ul class="bg-bubbles">
                 <li></li>
