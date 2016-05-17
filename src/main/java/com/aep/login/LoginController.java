@@ -35,7 +35,7 @@ public class LoginController {
         ModelAndView model = new ModelAndView();
         model.addObject("title", "Spring Security Custom Login Form");
         model.addObject("message", "This is protected page!");
-        model.setViewName("admin");
+        model.setViewName("admindashboard");
         return model;
     }
 
