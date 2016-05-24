@@ -1,3 +1,8 @@
+<%-- 
+    Document   : header
+    Created on : May 24, 2016, 9:32:32 PM
+    Author     : prime
+--%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html>
@@ -44,52 +49,3 @@
                 <jsp:include page="partials/navigationbar.jsp" />
                 <jsp:include page="partials/sidebar.jsp" />
             </nav>
-            <div id="page-wrapper">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="page-header" style="color: rgb(92,184,92)">Dashboard</h3>
-                    </div>
-                </div>
-                <jsp:include page="partials/widgets.jsp" />
-                <%--<jsp:include page="partials/morris-charts.jsp" />--%>
-            </div>
-        </div>
-
-
-        <!-- jQuery -->
-        <script src="<c:url value='/resources/sbadmin2/bower_components/jquery/dist/jquery.min.js' />"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="<c:url value='/resources/sbadmin2/bower_components/bootstrap/dist/js/bootstrap.min.js' />"></script>
-
-        <!-- Metis Menu Plugin JavaScript -->
-        <script src="<c:url value='/resources/sbadmin2/bower_components/metisMenu/dist/metisMenu.min.js' />"></script>
-
-        <!-- Morris Charts JavaScript -->
-        <script src="<c:url value='/resources/sbadmin2/bower_components/raphael/raphael-min.js' />"></script>
-        <script src="<c:url value='/resources/sbadmin2/bower_components/morrisjs/morris.min.js' />"></script>
-
-        <!--If charts are used, then sen this morris data script for displaying charts-->
-        <!--<script src="<c:url value='/resources/sbadmin2/js/morris-data.js' />"></script>-->
-
-        <!-- Custom Theme JavaScript -->
-        <script src="<c:url value='/resources/sbadmin2/dist/js/sb-admin-2.js' />"></script>
-
-
-
-        <!--  Custom JS Written by Jinto Antony -->
-        <script>
-            function formSubmit() {
-                document.getElementById("logoutForm").submit();
-            }
-        </script>
-
-        <!-- Functionality for Logout -->         
-        <c:url value="/j_spring_security_logout" var="logoutUrl" />
-        <!-- csrt for log out-->
-        <form action="${logoutUrl}" method="post" id="logoutForm">
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-        </form>
-
-    </body>
-</html>
