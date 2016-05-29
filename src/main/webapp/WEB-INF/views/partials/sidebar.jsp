@@ -54,3 +54,5 @@
     </div>
     <!-- /.sidebar-collapse -->
 </div>
+
+</nav>  

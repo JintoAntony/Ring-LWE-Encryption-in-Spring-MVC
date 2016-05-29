@@ -1,9 +1,5 @@
-<%-- 
-    Document   : header
-    Created on : May 24, 2016, 9:32:32 PM
-    Author     : prime
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +42,5 @@
                     </button>
                     <a class="navbar-brand" href="admindashboard.html">Algorithm Encryption Plugin</a>
                 </div>
-                <jsp:include page="partials/navigationbar.jsp" />
-                <jsp:include page="partials/sidebar.jsp" />
-            </nav>
+                
+                            
