@@ -44,6 +44,10 @@
                             Inputs</a>
                     </li>
                     <li>
+                        <a href="/outputs"><i class="fa fa-cubes" aria-hidden="true"></i>
+                            outputs</a>
+                    </li>
+                    <li>
                         <a href="/results"><i class="fa fa-circle" aria-hidden="true"></i>
                             Results</a>
                     </li>

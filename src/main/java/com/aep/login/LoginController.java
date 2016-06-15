@@ -19,8 +19,11 @@ import org.springframework.web.servlet.ModelAndView;
  *
  * @author prime
  */
-@Controller
+   @Controller
+   
 public class LoginController {
+    
+    
 
     //LoginService service = new LoginService();
     //Autowiring - Dependency will be injected to this, from wherever it is created (@Controller - antation is used to create it).
@@ -42,36 +45,6 @@ public class LoginController {
         model.setViewName("admindashboard");
         return model;
     }
-    // ++++++++++++++++ Change this to another packge later +++++++++++++++
-
-    // ++++++++++++++++  functionality starts here +++++++++++++++++++++++++
-    @RequestMapping(value = "/dataflow**", method = RequestMethod.GET)
-    public ModelAndView dataflowPage() {
-        ModelAndView model = new ModelAndView();
-        model.addObject("title", "The Dataflow of this project");
-        model.addObject("message", "Some images goes here");
-        model.setViewName("dataflow");
-        return model;
-    }
-
-    @RequestMapping(value = "/inputs**", method = RequestMethod.GET)
-    public ModelAndView inputsPage() {
-        ModelAndView model = new ModelAndView();
-        model.addObject("title", "Please enter the inputs for the algorithm");
-        model.addObject("message", "All parameters if possible for best output");
-        model.setViewName("inputs");
-        return model;
-    }
-
-    @RequestMapping(value = "/results**", method = RequestMethod.GET)
-    public ModelAndView resultsPage() {
-        ModelAndView model = new ModelAndView();
-        model.addObject("title", "Results found wil be displayed here (from the database previous resuts will be displayed");
-        model.addObject("message", "Results goes ");
-        model.setViewName("results");
-        return model;
-    }
-    // ++++++++++++++++ End functionality here ++++++++++++++++++++++
 
     //Spring Security see this :
     @RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -103,4 +76,6 @@ public class LoginController {
         model.setViewName("403");
         return model;
     }
+
+
 }
