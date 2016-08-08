@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dt-example table-type="html-wide" table-class="display dt-responsive nowrap" order="1" framework="bootstrap">
 
-<css lib="datatables responsive"/>
-<js lib="jquery datatables responsive">
-<![CDATA[
+    <css lib="datatables responsive"/>
+    <js lib="jquery datatables responsive">
+        <![CDATA[
 
 $(document).ready(function() {
 	$('#example').DataTable();
 } );
 
 ]]>
-</js>
+    </js>
 
-<title lib="Responsive">Bootstrap styling</title>
+    <title lib="Responsive">Bootstrap styling</title>
 
-<info><![CDATA[
+    <info><![CDATA[
 
 This example shows DataTables and the Responsive extension being used with the [Bootstrap](http://getbootstrap.com) framework providing the styling. The [DataTables / Bootstrap integration](//datatables.net/manual/styling/bootstrap) prove seamless integration for DataTables to be used in a Bootstrap page.
 

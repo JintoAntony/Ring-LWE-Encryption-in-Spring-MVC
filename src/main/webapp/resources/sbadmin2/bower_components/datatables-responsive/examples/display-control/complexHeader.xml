@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <dt-example table-type="html-complex-header" table-class="display nowrap" order="5">
 
-<css lib="datatables responsive">
-	th {
-		position: relative;
-		min-height: 41px;
-	} 
-	th span {
-		display: block;
-		position: absolute;
-		left: 0;
-		right: 0;
-		white-space: nowrap;
-		text-overflow: ellipsis;
-		overflow: hidden;
-	}
-</css>
-<js lib="jquery datatables responsive">
-<![CDATA[
+    <css lib="datatables responsive">
+        th {
+        position: relative;
+        min-height: 41px;
+        }
+        th span {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        }
+    </css>
+    <js lib="jquery datatables responsive">
+        <![CDATA[
 
 $(document).ready(function() {
 	// jQuery update a column title from the demo table to contain a long description
@@ -36,11 +36,11 @@ $(document).ready(function() {
 } );
 
 ]]>
-</js>
+    </js>
 
-<title lib="Responsive">Complex headers (rowspan / colspan)</title>
+    <title lib="Responsive">Complex headers (rowspan / colspan)</title>
 
-<info><![CDATA[
+    <info><![CDATA[
 
 This example shows how Responsive can be used with _complex headers_ (i.e. headers that contain `colspan` attributes for one or more cells). As Responsive will removed columns one at a time the cell with the `colspan` attribute can end up forcing the width of a column, disrupting the flow. Rather than removing all columns under the `colspan` cell, we want to reduce the amount of text that is visible in that cell. This example shows how that can be achieved thought a little bit of jQuery and CSS.
 

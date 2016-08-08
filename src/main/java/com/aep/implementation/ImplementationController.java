@@ -23,7 +23,6 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- *
  * @author prime
  */
 @Controller
@@ -67,8 +66,8 @@ public class ImplementationController {
         model.setViewName("results");
         return model;
     }
-
     // ++++++++++++++++ End functionality here ++++++++++++++++++++++
+
     //Spring Security see this :
     @RequestMapping(value = "/inputs.do", method = RequestMethod.GET)
     public ModelAndView Inputs(
@@ -87,10 +86,9 @@ public class ImplementationController {
                 cipher_value = cipher_value + new Integer(cipher[i]) + " ";
             }
             decrypted = decrypt(cipher, secret_key);
-             if (secret_key != null) {
-            model.addObject("decrypted", decrypted);
-
-        }
+            if (secret_key != null) {
+                model.addObject("decrypted", decrypted);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -101,8 +99,6 @@ public class ImplementationController {
         if (cipher_value != null) {
             model.addObject("cipher", secret_key);
         }
-
-       
         model.setViewName("outputs");
         return model;
     }

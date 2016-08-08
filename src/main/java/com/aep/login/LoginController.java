@@ -16,14 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- *
  * @author prime
  */
-   @Controller
-   
+@Controller
+
 public class LoginController {
-    
-    
+
 
     //LoginService service = new LoginService();
     //Autowiring - Dependency will be injected to this, from wherever it is created (@Controller - antation is used to create it).

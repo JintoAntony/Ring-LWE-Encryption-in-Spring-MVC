@@ -16,7 +16,7 @@
                 <a href="admindashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Theory<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Theory <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="flot.html"><i class="fa fa-bar-chart-o fa-fw"></i> Doc 1</a>
@@ -33,7 +33,7 @@
 
 
             <li>
-                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Implementation<span class="fa arrow"></span></a>
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Implementation <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="/dataflow"> <i class="fa fa-tree" aria-hidden="true"></i>
