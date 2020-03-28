@@ -21,8 +21,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 
 public class LoginController {
-
-
     //LoginService service = new LoginService();
     //Autowiring - Dependency will be injected to this, from wherever it is created (@Controller - antation is used to create it).
     //Use the annotation @Autowiring
@@ -74,6 +72,4 @@ public class LoginController {
         model.setViewName("403");
         return model;
     }
-
-
 }
